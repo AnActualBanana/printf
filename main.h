@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-/* prototypes */
+/* function prototypes */
 
 int _putchar(char c);
 
