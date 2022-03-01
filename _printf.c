@@ -5,12 +5,26 @@
  {
 	 va_list args;
 	 unsigned int count;
+	 char c;
 	 va_start(args, format);
-	 for (count = 0; count != "/0"; count++)
+	 for (count = 0; format[count] != '\0'; count++)
 	 {
-		 switch(
-	 }
-
-
-	 
+		 if (format[count] != '%')
+		 {
+		 c = format[count];
+		 _putchar(c);
+		 }
+		 else if (format[count] == '%')
+		 {
+			 count++;
+			 c = format[count];
+			 switch (c)
+			 {
+			 case '%' :
+				 _putchar(c);
+				 break;
+			 }
+		 }
+}
+	 return (0);
  }
