@@ -39,6 +39,10 @@ int _printf(const char *format, ...)
 				_putchar(print_index);
 				printed++;
 				break;
+			case 'd':
+				print_index = va_arg(args, int);
+				_putchar(print_index);
+				break;
 			}
 		}
 	}
