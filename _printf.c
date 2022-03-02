@@ -1,18 +1,27 @@
 #include "main.h"
-/*
- *
- */int _printf(const char *format, ...)
- {
+
+/**
+ * _printf - produces output to stdout  accoridng to a format
+ * @format: a character string composed of zero or more directives
+ * Return: number of characters printed in bytes
+ */
+
+
+int _printf(const char *format, ...)
+{
 	 va_list args;
+
 	 unsigned int count;
 	 char c;
+
 	 va_start(args, format);
+
 	 for (count = 0; format[count] != '\0'; count++)
 	 {
 		 if (format[count] != '%')
 		 {
-		 c = format[count];
-		 _putchar(c);
+			 c = format[count];
+			 _putchar(c);
 		 }
 		 else if (format[count] == '%')
 		 {
@@ -20,11 +29,11 @@
 			 c = format[count];
 			 switch (c)
 			 {
-			 case '%' :
+			 case '%':
 				 _putchar(c);
 				 break;
 			 }
 		 }
-}
-	 return (0);
+	 }
  }
+}
