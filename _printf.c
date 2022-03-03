@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	unsigned int count;
-	unsigned int printed;
+	unsigned int printed = 0;
 	char print_index;
 	char *string;
 	va_start(args, format);
@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		{
 			print_index = format[count];
 			_putchar(print_index);
+			printed++;
 		}
 		else if (format[count] == '%')
 		{
