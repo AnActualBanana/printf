@@ -44,6 +44,5 @@ int _printf(const char *format, ...)
 			}
 		}
 	}
-	printf("%d\n", printed);
 	return (printed);
 }
