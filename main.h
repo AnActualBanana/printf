@@ -13,4 +13,6 @@ int _putchar(char c);
 
 int _printf(const char *format, ...);
 
+int _convertc(char print_index);
+
 #endif /* MAIN_H */
