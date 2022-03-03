@@ -3,7 +3,7 @@
 /**
  * _printf - produces output to stdout  accoridng to a format
  * @format: a character string composed of zero or more directives
- * Return: number of characters printed in bytes
+ * Returns: number of characters printed in bytes
  */
 
 
