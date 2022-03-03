@@ -15,8 +15,6 @@ int _printf(const char *format, ...)
 	unsigned int printed;
 	char print_index;
 	char *string;
-	unsigned int decimal;
-	unsigned int digit;
 	unsigned int string_count;
 
 	va start(args, format);
