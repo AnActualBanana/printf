@@ -25,7 +25,7 @@
 			 print_index = format[count];
 			 switch (print_index)
 			 {
-			 case 's' :
+			 case 's':
 				 string = va_arg(args, char *);
 				 for (string_count = 0; string[string_count] != '\0'; string_count++)
 				 {
@@ -34,11 +34,11 @@
 					 printed++;
 				 }
 				 break;
-			 case '%' :
+			 case '%':
 				 _putchar(print_index);
 				 printed++;
 				 break;
-			 case 'i' :
+			 case 'i':
 				 decimal = va_arg(args, int);
 				 while (decimal > 0)
 				 {
