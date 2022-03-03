@@ -15,4 +15,8 @@ int _printf(const char *format, ...);
 
 int _convertc(char print_index);
 
+int _conversion_conversion(char print_index);
+
+int _conversion_s(char *string);
+
 #endif /* MAIN_H */
