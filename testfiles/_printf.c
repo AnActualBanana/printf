@@ -34,18 +34,11 @@ int _printf(const char *format, ...)
 			{
 			case 'c':
 				print_index = va_arg(args, int);
-				_putchar(print_index);
-				printed++;
+				_convertc(print_index);
 				break;
 			case '%':
 				_putchar(print_index);
 				printed++;
-				break;
-			case 'd':
-				print_index = va_arg(args, int);
-				_itoa(print_index, tmp, 10);
-				printed += _strlen(tmp);
-				_puts(tmp);
 				break;
 			}
 		}

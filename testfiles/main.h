@@ -15,5 +15,6 @@ void rev_string(char *s);
 int _strlen(char *s);
 char *_strdup(char *str);
 char *_strcpy(char *dest, char *src);
+int _convertc(char print_index);
 
 #endif
