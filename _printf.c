@@ -15,7 +15,6 @@ int _printf(const char *format, ...)
 	unsigned int printed;
 	char print_index;
 	char *string;
-
 	va_start(args, format);
 
 	for (count = 0; format[count] != '\0'; count++)
