@@ -27,26 +27,12 @@
 			 {
 			 case 's':
 				 string = va_arg(args, char *);
-				 for (string_count = 0; string[string_count] != '\0'; string_count++)
-				 {
-					 print_index = string[string_count];
-					 _putchar(print_index);
-					 printed++;
-				 }
+				 printed += _conversion_s(string);
 				 break;
 			 case '%':
-				 _putchar(print_index);
-				 printed++;
+				 printed += _conversion_conversion(print_index);
 				 break;
 			 case 'i':
-				 decimal = va_arg(args, int);
-				 while (decimal > 0)
-				 {
-					 digit = decimal % 10;
-					 _putchar(digit + '0');
-					 printed++;
-					 decimal = decimal / 10;
-				 }
 				 break;
 			 }
 		 }

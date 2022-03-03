@@ -5,26 +5,37 @@
  {
 	 va_list args;
 	 unsigned int count;
-	 char c;
+	 unsigned int printed;
+	 char print_index;
+	 char *string;
+	 unsigned int decimal;
+	 unsigned int digit;
+	 unsigned int string_count;
 	 va_start(args, format);
 	 for (count = 0; format[count] != '\0'; count++)
 	 {
 		 if (format[count] != '%')
 		 {
-		 c = format[count];
-		 _putchar(c);
+		 print_index = format[count];
+		 _putchar(print_index);
 		 }
 		 else if (format[count] == '%')
 		 {
 			 count++;
-			 c = format[count];
-			 switch (c)
+			 print_index = format[count];
+			 switch (print_index)
 			 {
-			 case '%' :
-				 _putchar(c);
+			 case 's':
+				 string = va_arg(args, char *);
+				 printed += _conversion_s(string);
+				 break;
+			 case '%':
+				 printed += _conversion_conversion(print_index);
+				 break;
+			 case 'i':
 				 break;
 			 }
 		 }
 }
-	 return (0);
+	 return (printed);
  }
