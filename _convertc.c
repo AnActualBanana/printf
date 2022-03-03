@@ -8,7 +8,7 @@
 
 int _convertc(char print_index)
 {
-        unsigned int printed;
+        unsigned int printed = 0;
 
         _putchar(print_index);
         printed++;
