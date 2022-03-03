@@ -8,5 +8,12 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+char *convert(unsigned int num, int base);
+void _puts(char *str);
+char *_itoa(int num, char *str, int base);
+void rev_string(char *s);
+int _strlen(char *s);
+char *_strdup(char *str);
+char *_strcpy(char *dest, char *src);
 
 #endif

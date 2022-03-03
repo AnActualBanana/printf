@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *
  *
@@ -12,7 +13,8 @@ int _printf(const char *format, ...)
 	unsigned int count; /* conter variable */
 	unsigned int printed; /* variable to return character's printed */
 	char print_index; /* variable to store character array index */
-	/*char *string;  pointer to string */
+	char *tmp = _strdup(""); /* variable for handling of d conversion */
+        /*char *string;  pointer to string */
 	/*unsigned int string_count;*/
 
 	va_start(args, format);
@@ -41,10 +43,13 @@ int _printf(const char *format, ...)
 				break;
 			case 'd':
 				print_index = va_arg(args, int);
-				_putchar(print_index);
+				_itoa(print_index, tmp, 10);
+				printed += _strlen(tmp);
+				_puts(tmp);
 				break;
 			}
 		}
 	}
+	free(tmp);
 	return(printed);
 }
