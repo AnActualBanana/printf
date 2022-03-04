@@ -14,6 +14,10 @@ int _printf(const char *format, ...)
 	char print_index;
 	char *string;
 	va_start(args, format);
+	if (!format)
+	{
+		return (-1);
+	}
 	for (count = 0; format[count] != '\0'; count++)
 	{
 		if (format[count] != '%')
@@ -51,6 +55,5 @@ int _printf(const char *format, ...)
 			}
 		}
 	}
-        printf("%d\n", printed);
 	return (printed);
 }
