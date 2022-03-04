@@ -8,9 +8,10 @@
 
 int _convertc(char print_index)
 {
-        unsigned int printed = 0;
+	unsigned int printed = 0;
 
-        _putchar(print_index);
-        printed++;
-        return (printed);
+	_putchar(print_index);
+	printed++;
+
+	return (printed);
 }
