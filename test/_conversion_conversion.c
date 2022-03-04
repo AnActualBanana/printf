@@ -3,7 +3,7 @@
  *
  */int _conversion_conversion(char print_index)
  {
-	 int printed = 0;
+	 unsigned int printed;
 	 _putchar(print_index);
 	 printed++;
 	 return (printed);
