@@ -48,6 +48,8 @@ int _printf(const char *format, ...)
 				print_index = format[count];
 				_putchar(print_index);
 				count++;
+				print_index = format[count];
+				_putchar(print_index);
 				printed += 2;
 				break;
 			}
