@@ -5,7 +5,6 @@
  {
 	 unsigned int string_count;
 	 int printed = 0;
-	 unsigned int printed = 0;
 	 char print_index;
 	 for (string_count = 0; string[string_count] != '\0'; string_count++)
 	 {
