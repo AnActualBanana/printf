@@ -34,6 +34,13 @@
 				 break;
 			 case 'i':
 				 break;
+			 default:
+				 count--;
+				 print_index = format[count];
+				 _putchar(print_index);
+				 count++;
+				 print_index = format[count];
+				 _putchar(print_index);
 			 }
 		 }
 }

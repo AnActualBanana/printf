@@ -4,11 +4,7 @@
  */int _conversion_s(char *string)
  {
 	 unsigned int string_count;
-<<<<<<< HEAD
-	 unsigned int printed;
-=======
-	 unsigned int printed = 0;
->>>>>>> main
+	 int printed = 0;
 	 char print_index;
 	 for (string_count = 0; string[string_count] != '\0'; string_count++)
 	 {
