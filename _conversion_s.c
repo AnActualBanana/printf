@@ -1,4 +1,5 @@
 #include "main.h"
+
 /*
  *
  */int _conversion_s(char *string)
