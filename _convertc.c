@@ -10,10 +10,6 @@ int _convertc(char print_index)
 {
         int printed = 0;
 
-	if (!print_index)
-	{
-		return (-1);
-	}
         _putchar(print_index);
         printed++;
         return (printed);
