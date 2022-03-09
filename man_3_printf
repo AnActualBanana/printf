@@ -1,0 +1,41 @@
+.TH _printf 3 "March 2022" "Version 1.0"
+
+.SH NAME
+_printf - our own version of the standard library function printf
+
+.SH SYNOPSIS
+
+#include "main.h"
+
+int _print(const char *format, ...)
+
+.SH DESCRIPTION
+The function _printf() produces an an output to stdout, the standard output
+stream, according to the format given to the function in the function's
+arguments. The format string controls the appearance of the output based on one
+or more directives that it includes. The function is a variadic function and as
+such accepts a variable number of arguments to be displayed as long as there are
+the equivalent amount of directives in the format string. The format string
+contains characters that are directly output to stdout unless preceded by a %.
+When a % is found in the format string the character following it specifies a
+conversion that needs to be made according to the corresponding arguments which
+follow the function's format string. The function successfully converts the
+arguments that are characters, strings and the symbol %, when given as a
+directive in the format string, a % followed by c, s, or % respectively.
+
+The function returns -1 for error.
+
+.SH OPTIONS
+this function does not use any options.
+
+.SH BUGS
+The function may not work in all conversion cases for characters, and strings.
+The function also does not successfully convert integers specified by the d and
+i directive like the standard library's printf function.
+
+.SH AUTHORS
+Logan McClain - 4220@holbertonschool.com
+Jessica Loyd - 4239@holbertonschool.com
+
+.SH SEE ALSO
+printf(3)
